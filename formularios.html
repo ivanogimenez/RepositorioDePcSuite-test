@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Iniciar sesiom</h1>
+    <form action="">
+        <!--Nombre de usuario y contraseña-->
+        <div>
+            <label for="username">Escribe el nombre de Usuario</label>
+            <input type="text" name="user" id="username" required placeholder="Escribe el nombre de Usuario">
+        </div>
+        <div>
+            <label for="password">Escribe tu contraseña</label>
+            <input type="password" name="password" id="password" required minlength="8" maxlength="12" placeholder="Escribe tu contraseña">
+            <button type="button">Mostrar</button>
+        </div>
+        <div>
+            <label for="region">Seleciona una region</label>
+            <select name="region" id="">
+                <option value="SA">Sudamerica</option>
+                <option value="NA" selected>Norteamerica</option>
+                <option value="EE">Europa este</option>
+                <option value="AE" disable >Asia</option>
+            </select>
+        </div>
+        <div>
+            <label for="welcome_mesage">Escribe un mensaje de bienvenida</label>
+            <textarea name="welcome_mesage" id="welcome_mesage" cols="30" rows="10"></textarea>
+        </div>
+        <!-- Boton de enviar , cuando  un boton esta dentro de un form el navegador por defecto 
+         interpretara que es un boton de enviar-->
+        <button type="submit"></button>
+        
+    </form>
+</body>
+</html>
